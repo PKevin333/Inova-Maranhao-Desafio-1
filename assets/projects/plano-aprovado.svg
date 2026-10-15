@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">Plano Aprovado</title>
+  <desc id="desc">Painel de planejamento com metas de estudo</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8fbff"/><stop offset="1" stop-color="#bde7f3"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-opacity=".12"/></filter></defs>
+  <rect width="800" height="450" fill="url(#bg)"/><rect x="62" y="50" width="676" height="350" rx="18" fill="#fff" filter="url(#s)"/>
+  <rect x="62" y="50" width="676" height="58" rx="18" fill="#153746"/><circle cx="102" cy="79" r="14" fill="#4cc3df"/><rect x="129" y="73" width="102" height="11" rx="5" fill="#fff" opacity=".9"/>
+  <text x="102" y="162" fill="#153746" font-family="Arial, sans-serif" font-size="26" font-weight="700">Seu plano de estudos</text>
+  <rect x="102" y="192" width="184" height="156" rx="14" fill="#e9f8fc"/><circle cx="194" cy="255" r="42" fill="none" stroke="#4cc3df" stroke-width="14" stroke-dasharray="205 59" transform="rotate(-90 194 255)"/><text x="169" y="263" fill="#153746" font-family="Arial" font-size="20" font-weight="700">78%</text>
+  <rect x="312" y="192" width="386" height="42" rx="10" fill="#f1f7f9"/><rect x="330" y="208" width="238" height="9" rx="4" fill="#b4ccd4"/><rect x="312" y="249" width="386" height="42" rx="10" fill="#f1f7f9"/><rect x="330" y="265" width="189" height="9" rx="4" fill="#b4ccd4"/><rect x="312" y="306" width="386" height="42" rx="10" fill="#f1f7f9"/><rect x="330" y="322" width="276" height="9" rx="4" fill="#b4ccd4"/>
+</svg>

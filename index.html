@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio gamificado de Kevin Silva Lopes, desenvolvedor Front-end no Programa Trilhas." />
+    <title>Kevin Silva Lopes | Portfólio Front-end</title>
+
+    <!-- Fontes do projeto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Cenário arcade exclusivo -->
+    <div class="arcade-scene" aria-hidden="true">
+      <span class="arcade-scene__label arcade-scene__label--brand">INOVA MARANHÃO</span>
+      <span class="arcade-scene__label arcade-scene__label--code">&lt;/&gt;</span>
+      <span class="arcade-scene__label arcade-scene__label--slz">SLZ</span>
+      <span class="arcade-scene__label arcade-scene__label--dev">DEV 01</span>
+      <span class="arcade-scene__pixel arcade-scene__pixel--one"></span>
+      <span class="arcade-scene__pixel arcade-scene__pixel--two"></span>
+      <span class="arcade-scene__pixel arcade-scene__pixel--three"></span>
+      <span class="arcade-scene__trail arcade-scene__trail--left"></span>
+      <span class="arcade-scene__trail arcade-scene__trail--right"></span>
+    </div>
+
+    <!-- HUD superior -->
+    <header class="hud" aria-label="Status do jogador">
+      <p>JOGADOR 1</p>
+      <p>FASE 1 <span aria-hidden="true">·</span> TRILHAS</p>
+    </header>
+
+    <main>
+      <!-- Cartão do jogador -->
+      <section class="player-card" aria-labelledby="player-name">
+        <img
+          class="player-card__photo"
+          src="assets/kevin-silva.png"
+          alt="Foto de Kevin Silva Lopes"
+          width="112"
+          height="112"
+        />
+
+        <div class="player-card__heading">
+          <p class="pixel-label">PERFIL DO JOGADOR</p>
+          <h1 id="player-name">Kevin Silva</h1>
+          <p class="player-card__subtitle">Desenvolvedor Front-end no Programa Trilhas</p>
+        </div>
+
+        <!-- Nível e experiência -->
+        <div class="level" aria-label="Nível 1, experiência em 40 por cento">
+          <span class="level__badge">NV 01</span>
+          <span class="level__bar" aria-hidden="true"><span></span></span>
+          <span class="level__xp">XP</span>
+        </div>
+
+        <!-- Habilidades atuais -->
+        <div class="skills">
+          <h2>SKILLS</h2>
+          <ul>
+            <li>Fundamentos da Web com HTML</li>
+            <li>Controle de versão com Git e GitHub</li>
+            <li>CSS: Estilização e Layout</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Menu de missões -->
+      <nav class="missions" aria-label="Missões do portfólio">
+        <a class="mission" href="#sobre">
+          <span class="mission__number mission__number--pink">01</span>
+          <span class="mission__text">
+            <strong>Sobre mim</strong>
+            <small>Missão inicial <span aria-hidden="true">·</span> conheça o jogador</small>
+          </span>
+          <span class="mission__arrow" aria-hidden="true">▶</span>
+        </a>
+
+        <a class="mission" href="#projetos">
+          <span class="mission__number mission__number--yellow">02</span>
+          <span class="mission__text">
+            <strong>Veja meus projetos</strong>
+            <small>Fases desbloqueadas <span aria-hidden="true">·</span> jogue cada projeto</small>
+          </span>
+          <span class="mission__arrow" aria-hidden="true">▶</span>
+        </a>
+
+        <a class="mission" href="https://drive.google.com/drive/folders/1oop1-gEi9htgSpjJxeO88DejiIKXkfHE?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <span class="mission__number mission__number--green">03</span>
+          <span class="mission__text">
+            <strong>Veja meus certificados</strong>
+            <small>Conquistas <span aria-hidden="true">·</span> troféus da jornada</small>
+          </span>
+          <span class="mission__arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+
+      <!-- Conteúdo da missão Sobre mim -->
+      <section class="mission-panel" id="sobre" aria-labelledby="about-title">
+        <p class="pixel-label">MISSÃO 01</p>
+        <h2 id="about-title">Sobre mim</h2>
+
+        <!-- Ficha resumida do jogador -->
+        <dl class="player-info">
+          <div class="player-info__item player-info__item--pink">
+            <dt>CLASSE</dt>
+            <dd>Desenvolvedor Front-end</dd>
+          </div>
+          <div class="player-info__item player-info__item--yellow">
+            <dt>ORIGEM</dt>
+            <dd>São Luís, Maranhão</dd>
+          </div>
+          <div class="player-info__item player-info__item--green">
+            <dt>OBJETIVO</dt>
+            <dd>Criar soluções digitais</dd>
+          </div>
+        </dl>
+
+        <!-- Histórico e conhecimentos -->
+        <div class="player-bio">
+          <h3>HISTÓRICO DO JOGADOR</h3>
+          <p>
+            Profissional de Tecnologia da Informação com experiência em projetos tecnológicos,
+            desenvolvimento de soluções digitais, análise de dados e otimização de processos.
+          </p>
+          <p>
+            No Projeto Brisas, da Universidade Estadual do Maranhão, contribuiu para o desenvolvimento
+            de uma plataforma de registro de imóveis voltada à digitalização e modernização de processos.
+          </p>
+
+          <dl class="player-details">
+            <div>
+              <dt>FERRAMENTAS</dt>
+              <dd>Excel e Power BI</dd>
+            </div>
+            <div>
+              <dt>MÉTODOS</dt>
+              <dd>Scrum e Kanban</dd>
+            </div>
+            <div>
+              <dt>FOCO</dt>
+              <dd>Inovação, colaboração e melhoria de fluxos</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Conteúdo da missão Projetos -->
+      <section class="mission-panel" id="projetos" aria-labelledby="projects-title">
+        <p class="pixel-label">MISSÃO 02</p>
+        <h2 id="projects-title">Projetos desbloqueados</h2>
+        <ul class="project-list">
+          <li><a href="https://github.com/PKevin333/Study-Always" target="_blank" rel="noopener noreferrer">Study Always <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/PKevin333/Plano-Aprovado" target="_blank" rel="noopener noreferrer">Plano Aprovado <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/PKevin333/scanner-sipac" target="_blank" rel="noopener noreferrer">Scanner SIPAC <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/PKevin333/trilhas-project" target="_blank" rel="noopener noreferrer">Trilhas Project <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </section>
+
+      <!-- Acesso ao GitHub -->
+      <a class="github-link" href="https://github.com/PKevin333?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="28" height="28">
+          <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.22c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z" />
+        </svg>
+      </a>
+    </main>
+
+    <!-- Créditos -->
+    <footer>
+      <p>Feito por Kevin Silva Lopes</p>
+    </footer>
+  </body>
+</html>
